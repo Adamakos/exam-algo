@@ -5,6 +5,13 @@ import java.util.List;
 public class OddNumbers {
 
     public static Integer sum(List<Integer> numbers) {
-        return null;
+
+        Integer numSum = 0;
+
+        for (Integer number : numbers) {
+            if (number % 2 != 0) { numSum += number; }
+        }
+
+        return numSum;
     }
 }
